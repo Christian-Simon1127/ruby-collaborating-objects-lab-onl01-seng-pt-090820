@@ -27,9 +27,9 @@ class Song
         temp_artist = names
       end
     }
-    # if temp_artist == nil
-    #   temp_artist = Artist.new(art_name)
-    # end
+    if temp_artist == nil
+      temp_artist = Artist.new(art_name)
+    end
     song = Song.new(name)
     song.artist = temp_artist
   end
