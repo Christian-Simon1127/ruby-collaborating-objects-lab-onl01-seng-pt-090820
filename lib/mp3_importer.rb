@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    music = Dir.entries("/spec/fixtures/mp3s/")
+    music = Dir.entries("./spec/fixtures/mp3s/")
     puts music
   end
   
