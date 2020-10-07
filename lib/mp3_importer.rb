@@ -6,8 +6,9 @@ class MP3Importer
   end
   
   def files
-    all_files = @path.split("/")
-    file_name = all_files[-1]
+    music = []
+    music << Dir["/spec/fixtures/mp3s"]
+
   end
   
   
