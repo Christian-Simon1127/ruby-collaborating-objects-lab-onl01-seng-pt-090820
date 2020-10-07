@@ -16,7 +16,13 @@ class MP3Importer
     real_files
   end
   
-  
+  def import()
+    
+    
+    
+    
+    
+  end
   
   
 end
