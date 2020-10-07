@@ -35,6 +35,9 @@ class Artist
     temp_artist
   end
   
+  def print_songs
+    
+  end
   
   
 end
