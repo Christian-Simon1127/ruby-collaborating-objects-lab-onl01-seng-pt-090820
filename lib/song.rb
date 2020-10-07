@@ -22,7 +22,11 @@ class Song
     name = files[1]
     art_name = files[0]
     song = Song.new(name)
-    
+    Artist.all.each { |name|
+      if name = artist_name
+        @artist = name 
+      end
+    }
   end
   
   def artist_name=(artist_name)
