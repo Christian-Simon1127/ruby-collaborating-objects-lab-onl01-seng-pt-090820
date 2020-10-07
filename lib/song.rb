@@ -24,11 +24,13 @@ class Song
   end
   
   def artist_name=(artist_name)
-    if @artist == nil 
-      @artist = Artist.new(artist_name)
-    else
-      self.artist.name
-    end
+    Artist.all.each { |name|
+      if name = artist_name
+        self.artist = name 
+      
+      
+      
+    }
   end 
   
 end
