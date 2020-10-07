@@ -33,7 +33,7 @@ class Song
         @artist = name 
       end
     }
-    if @artist = nil 
+    if @artist == nil 
       @artist = Artist.new(artist_name)
     end
     
