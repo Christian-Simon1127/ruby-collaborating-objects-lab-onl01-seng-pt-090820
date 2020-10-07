@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    file = @path.split("/")
+    all_files = @path.split("/")
   end
   
   
