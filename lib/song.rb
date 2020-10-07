@@ -22,9 +22,9 @@ class Song
     name = files[1]
     art_name = files[0]
     song = Song.new(name)
-    Artist.all.each { |name|
-      if name = artist_name
-        @artist = name 
+    Artist.all.each { |names|
+      if names = artist_name
+        @artist = names
       end
     }
   end
