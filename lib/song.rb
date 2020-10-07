@@ -28,15 +28,7 @@ class Song
   end
   
   def artist_name=(artist_name)
-    Artist.all.each { |name|
-      if name = artist_name
-        @artist = name 
-      end
-    }
-    if @artist == nil 
-      @artist = Artist.new(artist_name)
-    end
-    
+    @artist = Artist.find_or_create_by_name(artist_name)
   end 
   
 end
