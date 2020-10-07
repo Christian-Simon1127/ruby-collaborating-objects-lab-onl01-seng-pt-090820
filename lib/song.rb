@@ -24,7 +24,7 @@ class Song
     song = Song.new(name)
     Artist.all.each { |names|
       if names = art_name
-        @artist = names
+        song.artist = names
       end
     }
   end
