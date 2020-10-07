@@ -23,6 +23,7 @@ class Song
     art_name = files[0]
     temp_artist = Artist.new(art_name)
     song = Song.new(name)
+    song.artist = Artist.find_or_create_by_name(art_name)
   end
   
   def artist_name=(artist_name)
