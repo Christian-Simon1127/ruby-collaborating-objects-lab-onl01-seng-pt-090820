@@ -7,7 +7,7 @@ class MP3Importer
   
   def files
     music = []
-    Dir[String]
+    Dir["mp3"]
 
   end
   
