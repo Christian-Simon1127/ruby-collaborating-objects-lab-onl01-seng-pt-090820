@@ -16,8 +16,10 @@ class MP3Importer
     real_files
   end
   
-  def import()
-    
+  def import
+    self.files.each {|file|
+      Song.create_by_file_name(file)
+    }
     
     
     
