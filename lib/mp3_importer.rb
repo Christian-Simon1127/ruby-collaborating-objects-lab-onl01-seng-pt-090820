@@ -6,8 +6,14 @@ class MP3Importer
   end
   
   def files
-    music = Dir.entries("./spec/fixtures/mp3s/")
-    puts music
+    temp_files = Dir.entries("./spec/fixtures/mp3s/")
+    real_files = [] 
+    temp_files.each { |file|
+      if file.include?(".mp3")
+        real_files << file
+      end  
+    }
+    real_files
   end
   
   
