@@ -35,8 +35,10 @@ class Artist
     temp_artist
   end
   
-  def print_songs
-    
+  def print_songs(artist)
+    artist.songs.each {|song|
+      puts song
+    }
   end
   
   
