@@ -22,16 +22,7 @@ class Song
     name = files[1]
     art_name = files[0]
     temp_artist = Artist.new(art_name)
-    # Artist.all.each { |names|
-    #   if names = art_name
-    #     temp_artist = names
-    #   end
-    # }
-    # if temp_artist == nil
-    #   temp_artist = Artist.new(art_name)
-    # end
     song = Song.new(name)
-    song.artist = temp_artist
   end
   
   def artist_name=(artist_name)
