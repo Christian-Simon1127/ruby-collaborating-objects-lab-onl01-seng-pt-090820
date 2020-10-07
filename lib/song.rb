@@ -23,9 +23,9 @@ class Song
     name = Song.new(name)
   end
   
-  def artist_name
+  def artist_name(name)
     if @artist == nil 
-      nil 
+      @artist = Artist.new(name)
     else
       self.artist.name
     end
